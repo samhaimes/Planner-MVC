@@ -1,0 +1,42 @@
+﻿@model IEnumerable<PlannerMVC.Models.Link>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Day)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Activity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Day.DayId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Activity.ActivityName)
+                </td>
+                <td>
+
+                    <a asp-action="Delete" asp-route-id="@item.LinkId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

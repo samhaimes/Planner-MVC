@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlannerMVC.Models.Activity">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Models\Activity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlannerMVC.Models.Day">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAABAAA=</HashCode>
+      <FileName>Models\Day.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlannerMVC.Models.Link">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAEAAAAAAAAAAAAAgAAAAAAAAAEABAAA=</HashCode>
+      <FileName>Models\Link.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Day" />
+      <Property Name="Activity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlannerMVC.Controllers.ActivitiesController">
+    <Position X="14" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABBACAAAAQAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ActivitiesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlannerMVC.Controllers.HomeController">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABQAAAAAAAAAAIAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlannerMVC.Controllers.LinksController">
+    <Position X="12" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAABACAAAAAAAAAAAEAAEAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\LinksController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlannerMVC.Controllers.DaysController">
+    <Position X="10" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAIAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\DaysController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

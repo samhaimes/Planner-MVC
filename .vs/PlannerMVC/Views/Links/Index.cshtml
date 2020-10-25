@@ -1,0 +1,118 @@
+﻿@model IEnumerable<PlannerMVC.Models.Link>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Weekly Planner</h1>
+
+
+<table class="table table-bordered table-responsive table-hover">
+    @foreach (var x in Model.Select(x => x.Day).Distinct())
+    {
+        <th> @Html.DisplayFor(modelItem => x.Days) </th>
+
+    }
+
+    <tbody>
+        <tc>
+    <td>
+        @foreach (var x in Model)
+        {
+            @if (x.Day.DayId == 0)
+            {
+                <div> @Html.DisplayFor(ModelItem => x.Activity.ActivityName)</div>
+                <small> @Html.DisplayFor(ModelItem => x.Activity.ActivityDetails)</small>
+            }
+        }
+    </td>
+    </tc>
+    <tc>
+        <td>
+            @foreach (var x in Model)
+            {
+
+                @if (x.Day.DayId == 1)
+                {
+                    <div> @Html.DisplayFor(ModelItem => x.Activity.ActivityName)</div>
+                    <small> @Html.DisplayFor(ModelItem => x.Activity.ActivityDetails)</small>
+                }
+            }
+        </td>
+    </tc>
+    <tc>
+        <td>
+            @foreach (var x in Model)
+            {
+
+                @if (x.Day.DayId == 2)
+                {
+                    <div> @Html.DisplayFor(ModelItem => x.Activity.ActivityName)</div>
+                    <small> @Html.DisplayFor(ModelItem => x.Activity.ActivityDetails)</small>
+                }
+            }
+        </td>
+    </tc>
+    <tc>
+        <td>
+            @foreach (var x in Model)
+            {
+
+                @if (x.Day.DayId == 3)
+                {
+                    <div> @Html.DisplayFor(ModelItem => x.Activity.ActivityName)</div>
+                    <small> @Html.DisplayFor(ModelItem => x.Activity.ActivityDetails)</small>
+                }
+            }
+        </td>
+    </tc>
+    <tc>
+        <td>
+            @foreach (var x in Model)
+            {
+
+                @if (x.Day.DayId == 4)
+                {
+                    <div> @Html.DisplayFor(ModelItem => x.Activity.ActivityName)</div>
+                    <small> @Html.DisplayFor(ModelItem => x.Activity.ActivityDetails)</small>
+                }
+            }
+        </td>
+    </tc>
+    <tc>
+        <td>
+            @foreach (var x in Model)
+            {
+
+                @if (x.Day.DayId == 5)
+                {
+                    <div> @Html.DisplayFor(ModelItem => x.Activity.ActivityName)</div>
+                    <small> @Html.DisplayFor(ModelItem => x.Activity.ActivityDetails)</small>
+                }
+            }
+        </td>
+    </tc>
+    <tc>
+        <td>
+            @foreach (var x in Model)
+            {
+
+                @if (x.Day.DayId == 6)
+                {
+                    <div> @Html.DisplayFor(ModelItem => x.Activity.ActivityName)</div>
+                    <small> @Html.DisplayFor(ModelItem => x.Activity.ActivityDetails)</small>
+                }
+            }
+        </td>
+    </tc>
+    </tbody>
+</table>
+
+
+
+
+<a href="/Activities/Create" class="Button">Add Activity</a>
+<a href="/Links/Create" class="Button">Add To Planner</a>
+<a href="/Link" class="Button">Delete From Planner</a>
+
