@@ -89,5 +89,12 @@ namespace PlannerMVC.Controllers
         {
             return _context.Link.Any(e => e.LinkId == id);
         }
+        public async Task<IActionResult> DeleteIt()
+        { 
+            var plannerContext = _context.Link.Include(l => l.Activity).Include(l => l.Day);
+            return View(await plannerContext.ToListAsync());
+        }
+
+
     }
 }
